@@ -1,9 +1,9 @@
 services:
   # Registrar repositorios como servicios explícitamente
-  App\Repository\RegionRepository:
+  App\Repository\HolaRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
-      - 'App\Entity\Region'
+      - 'App\Entity\Hola'
     tags: ['doctrine.repository_service']
     public: true
 
