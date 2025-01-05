@@ -6,6 +6,7 @@
             "App\\": "src/"
         }
     },
+    "license": "MIT",
     "require": {
         "php": ">=8.2",
         "doctrine/orm": "^3.3"
