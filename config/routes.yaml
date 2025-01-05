@@ -1,9 +1,0 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
-
-IsWorking:
-    path: /
-    controller: App\Controller\IsWorkingController::index
