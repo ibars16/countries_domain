@@ -1,0 +1,69 @@
+services:
+  # Otros servicios...
+
+  # Registrar el repositorio como un servicio
+  App\Repository\CountryRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\Country'
+
+  App\Repository\BeachTouristGuideRepository:
+    factory: ['@doctrine.orm.entity_manager', 'getRepository']
+    arguments:
+      - 'App\Entity\BeachTouristGuide'
+
+  App\Repository\CaveTouristGuideRepository:
+    factory: ['@doctrine.orm.entity_manager', 'getRepository']
+    arguments:
+      - 'App\Entity\CaveTouristGuide'
+
+
+  App\Repository\DocumentationGeneralInformationRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\DocumentationGeneralInformation'
+
+  App\Repository\GeneralInformationRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\GeneralInformation'
+
+  App\Repository\InfoGettingThereRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\InfoGettingThere'
+
+  App\Repository\InsuranceInformationRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\InsuranceInformation'
+
+  App\Repository\NaturalParkTouristGuideRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\NaturalParkTouristGuide'
+
+  App\Repository\NightClubToursitGuideRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\NightClubToursitGuide'
+
+  App\Repository\RegionRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\Region'
+
+  App\Repository\RestaurantRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\Restaurant'
+
+  App\Repository\RiverTouristGuideRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\RiverTouristGuide'
+
+  App\Repository\TouristGuideRepository:
+    factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
+    arguments:
+      - 'App\Entity\TouristGuide'
