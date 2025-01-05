@@ -5,75 +5,88 @@ services:
     arguments:
       - 'App\Entity\Country'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\BeachTouristGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\BeachTouristGuide'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\CaveTouristGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\CaveTouristGuide'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\DocumentationGeneralInformationRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\DocumentationGeneralInformation'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\GeneralInformationRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\GeneralInformation'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\InfoGettingThereRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\InfoGettingThere'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\InsuranceInformationRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\InsuranceInformation'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\NaturalParkTouristGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\NaturalParkTouristGuide'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\NightClubToursitGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\NightClubToursitGuide'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\RegionRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\Region'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\RestaurantRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\Restaurant'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\RiverTouristGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\RiverTouristGuide'
     tags: ['doctrine.repository_service']
+    public: true
 
   App\Repository\TouristGuideRepository:
     factory: [ '@doctrine.orm.entity_manager', 'getRepository' ]
     arguments:
       - 'App\Entity\TouristGuide'
     tags: ['doctrine.repository_service']
+    public: true
