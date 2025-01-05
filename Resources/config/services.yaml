@@ -6,4 +6,5 @@ services:
       - 'App\Entity\Hola'
     tags: ['doctrine.repository_service']
     public: true
+    autowire: true  # Activar autowire para que Symfony gestione las dependencias automáticamente
 
